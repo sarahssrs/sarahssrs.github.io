@@ -8,16 +8,17 @@ function getMovieInfosOMDB(title){
         if(data.Response == 'False'){
             descriptionBodyNotFound.textContent = "Filme não encontrado! Tente novamente.";
             descriptionBodyNotFound.style.marginBottom = '30px'
-            movieTitle.textContent = "Titulo do filme"
-            movieYear.textContent = "Ano"
-            movieGenre.textContent = "Genero"
-            movieRuntime.textContent = "Duração"
-            imdbRating.textContent = "Score"
-            movieInfo.textContent = "Descrição do filme."
-            movieWriter.textContent = "Nome do escritor"
-            movieDirector.textContent = "Nome do Diretor"
+            movieTitle.textContent = ""
+            movieYear.textContent = ""
+            movieGenre.textContent = ""
+            movieRuntime.textContent = ""
+            imdbRating.textContent = ""
+            movieInfo.textContent = ""
+            movieWriter.textContent = ""
+            movieDirector.textContent = ""
+            escritoPor.textContent = ""
+            dirigidoPor.textContent = ""
             moviePoster.style.backgroundImage = `url(filmeNaoEncontrado.png)`
-
         } else {
             descriptionBodyNotFound.textContent = "";
             
